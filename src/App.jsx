@@ -27,10 +27,11 @@ function App() {
   return (
     <div className='flex justify-center lg:mt-24  lg:p-'>
 
-       <div >
-        <div>
+       <div  className='w-72 h-96 rounded-lg bg-slate-200 p-4'>
+
+        <div className='flex justify-center mt-2'>
           <input
-          className='border-gray-100 text-center text-black font-semibold'
+          className='border-white-1 rounded-full text-center text-black font-semibold'
         type="text"
         name="location"
         id=""
@@ -38,15 +39,15 @@ function App() {
         value={location}
         onChange={(event) => setLocation(event.target.value)}
       />
-        <button className="btn btn-xs ml-1" onClick={handlesearch}> <AiOutlineSearch/></button>
+        <button className="btn btn-xs rounded-full ml-1" onClick={handlesearch}> <AiOutlineSearch/></button>
         </div>
         
         <div>
           <div>
-          <div className="form-control">
+          <div className="form-control mt-3 mr-3">
             <label className="label cursor-pointer">
               <span className="label-text"></span>
-              <input type="checkbox" className="toggle" checked={show} onChange={()=> setShow(!show)} />
+              <input type="checkbox" className="toggle ml-3" checked={show} onChange={()=> setShow(!show)} />
               </label>
               </div>
           </div>
